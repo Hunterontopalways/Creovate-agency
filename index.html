@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Creovate | Web3 Marketing Agency</title>
+    <meta name="description" content="Creovate is a premium Web3 Marketing Agency. We connect brands with top crypto creators to drive real results in the Web3 ecosystem." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Creovate | Web3 Marketing Agency" />
+    <meta property="og:description" content="Creovate is a premium Web3 Marketing Agency. We connect brands with top crypto creators to drive real results." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/creovate_1784846196975-C0o4aYbl.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Creovate | Web3 Marketing Agency" />
+    <meta name="twitter:description" content="Creovate is a premium Web3 Marketing Agency." />
+    <meta name="twitter:image" content="/creovate_1784846196975-C0o4aYbl.jpg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/creovate_1784846196975-C0o4aYbl.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/index-fbRUzmsL.js"></script>
+    <link rel="stylesheet" crossorigin href="/index-CXikId_r.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function () {
+        if (!window.matchMedia || !window.matchMedia("(pointer: fine)").matches) return;
+
+        var cursor = document.createElement("div");
+        cursor.id = "creovate-cursor";
+        cursor.textContent = "\uD83D\uDC7D";
+        document.body.appendChild(cursor);
+
+        var style = document.createElement("style");
+        style.textContent =
+          "html.creovate-cursor-active, html.creovate-cursor-active *{cursor:none !important;}" +
+          "#creovate-cursor{position:fixed;top:0;left:0;font-size:22px;line-height:1;" +
+          "transform:translate(-50%,-50%) scale(0);pointer-events:none;z-index:2147483647;" +
+          "will-change:transform;opacity:0;transition:opacity .15s ease,transform .12s ease;" +
+          "filter:drop-shadow(0 0 6px rgba(255,255,255,.35));}" +
+          "#creovate-cursor.creovate-cursor-visible{opacity:1;}" +
+          "#creovate-cursor.creovate-cursor-down{transform:translate(-50%,-50%) scale(0.8) rotate(-8deg);}";
+        document.head.appendChild(style);
+
+        var raf = null, x = 0, y = 0;
+
+        function render() {
+          cursor.style.transform =
+            "translate(-50%,-50%) translate3d(" + x + "px," + y + "px,0) scale(1)";
+          raf = null;
+        }
+
+        window.addEventListener(
+          "mousemove",
+          function (e) {
+            document.documentElement.classList.add("creovate-cursor-active");
+            cursor.classList.add("creovate-cursor-visible");
+            x = e.clientX;
+            y = e.clientY;
+            if (!raf) raf = requestAnimationFrame(render);
+          },
+          { passive: true }
+        );
+
+        window.addEventListener("mousedown", function () {
+          cursor.classList.add("creovate-cursor-down");
+        });
+        window.addEventListener("mouseup", function () {
+          cursor.classList.remove("creovate-cursor-down");
+        });
+        document.addEventListener("mouseleave", function () {
+          cursor.classList.remove("creovate-cursor-visible");
+        });
+
+        // If the visitor's device turns out to be touch-only after all, bail out cleanly.
+        window.addEventListener(
+          "touchstart",
+          function () {
+            document.documentElement.classList.remove("creovate-cursor-active");
+            cursor.remove();
+            style.remove();
+          },
+          { once: true, passive: true }
+        );
+      })();
+    </script>
+  </body>
+</html>
